@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0babce</color>
+
+    <color name="cpfg">#63188c7c</color>
+    <color name="cpfg_h">#638c8818</color>
+    <color name="cpfg_l">#638c4118</color>
+    <color name="cpbg">#4b54605f</color>
+
+    <color name="indexPrimary">#009688</color>
+    <color name="indexPrimaryDark">#09856e</color>
+    <color name="cardbackgroubd">#cdd1d4</color>
+
+    <color name="unchecked">#7e7e7f</color>
+    <color name="verified">#09856e</color>
+    <color name="unverified">#a6280f</color>
+</resources>

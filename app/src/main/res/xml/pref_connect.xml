@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_sig_port"
+        android:key="def_sig_port"
+        android:negativeButtonText="cancel"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:positiveButtonText="sure"
+        android:title="@string/pref_title_sig_port" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_file_port"
+        android:key="def_file_port"
+        android:negativeButtonText="cancel"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:positiveButtonText="sure"
+        android:title="@string/pref_title_file_port" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_time_out"
+        android:key="time_out"
+        android:negativeButtonText="cancel"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:positiveButtonText="sure"
+        android:title="@string/pref_title_time_out" />
+
+
+</PreferenceScreen>

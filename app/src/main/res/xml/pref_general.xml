@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/pref_title_dir_setting"
+        android:key="def_dir">
+        <intent android:action="android.intent.action.OPEN_DOCUMENT_TREE"/>
+    </Preference>
+    <Preference
+        android:title="@string/pref_title_cl_dir_setting"
+        android:key="def_cl_dir"/>
+
+
+</PreferenceScreen>

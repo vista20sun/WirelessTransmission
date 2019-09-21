@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp"
+    app:cardCornerRadius="5dp"
+    app:elevation="1dp"
+    android:id="@+id/sync_card"
+    android:visibility="visible">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sync_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <TextView
+            android:id="@+id/sync_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:singleLine="true"
+            android:text="path:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            app:layout_constraintBottom_toBottomOf="@+id/sync_icon"
+            app:layout_constraintEnd_toStartOf="@+id/sync_remote"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/sync_icon"
+            app:layout_constraintTop_toTopOf="@+id/sync_icon" />
+
+        <TextView
+            android:id="@+id/sync_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:singleLine="true"
+            android:text="name"
+            app:layout_constraintEnd_toStartOf="@+id/sync_local"
+            app:layout_constraintStart_toEndOf="@+id/sync_icon"
+            app:layout_constraintTop_toTopOf="@+id/sync_icon" />
+
+        <TextView
+            android:id="@+id/sync_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:text="type"
+            app:layout_constraintBottom_toBottomOf="@+id/sync_icon"
+            app:layout_constraintEnd_toStartOf="@+id/sync_conflict"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/sync_icon"
+            app:layout_constraintStart_toEndOf="@+id/sync_icon"
+            app:layout_constraintTop_toBottomOf="@+id/sync_path"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/sync_conflict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:text="unchecked"
+            app:layout_constraintBottom_toBottomOf="@+id/sync_type"
+            app:layout_constraintEnd_toStartOf="@+id/sync_remote"
+            app:layout_constraintTop_toTopOf="@+id/sync_type" />
+
+        <CheckBox
+            android:id="@+id/sync_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="下载"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sync_local" />
+
+        <CheckBox
+            android:id="@+id/sync_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="上传"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

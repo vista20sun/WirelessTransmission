@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp"
+    app:cardCornerRadius="5dp"
+    app:elevation="1dp"
+    android:id="@+id/trans_card"
+    android:visibility="visible">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/trans_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <TextView
+            android:id="@+id/trans_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="name"
+            app:layout_constraintLeft_toRightOf="@+id/trans_icon"
+            app:layout_constraintRight_toRightOf="@+id/task_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/task_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/trans_icon"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintRight_toLeftOf="@+id/task_cancel"
+            android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/task_cancel"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/trans_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="size/size"
+            app:layout_constraintBottom_toBottomOf="@+id/trans_icon"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/task_bar" />
+
+        <ImageView
+            android:id="@+id/trans_tar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/trans_icon"
+            app:layout_constraintTop_toBottomOf="@+id/task_bar"
+            app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/c_his"
+        android:title="history"
+        app:showAsAction="always"
+        android:actionLayout="@layout/activity_client"
+        android:icon="@drawable/icon_his"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/c_ref"
+        android:title="refresh"
+        app:showAsAction="always"
+        android:actionLayout="@layout/activity_client"
+        android:icon="@drawable/icon_flash"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/c_sync"
+        android:title="close"
+        app:showAsAction="always"
+        android:actionLayout="@layout/activity_client"
+        android:icon="@drawable/icon_sync"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/c_close"
+        android:title="close"
+        app:showAsAction="always"
+        android:actionLayout="@layout/activity_client"
+        android:icon="@drawable/icon_close"
+        tools:ignore="AppCompatResource" />
+
+</menu>

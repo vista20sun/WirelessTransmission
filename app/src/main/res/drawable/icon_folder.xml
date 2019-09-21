@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="352.5dp"
+    android:height="516.4dp"
+    android:viewportWidth="352.5"
+    android:viewportHeight="516.4">
+
+    <path
+        android:fillColor="#F9E4A1"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M352,419.4 L352,397.4 L352,343.3 L352,323.3 C352,308.5,344.7,295.2,333.6,289.7
+L304.6,275.4 L304.6,34.9 C304.6,15.9,289.2,0.5,270.2,0.5 L35.3,0.5
+C16.4,0.5,1,15.9,1,34.9 L1,410.9 C1,429.9,16.4,445.3,35.4,445.3 L210,445.3
+L250.1,445.3 L270.3,445.3 L304.7,445.3 L326.3,445.3
+C340.5,445.3,352,433.7,352,419.4 Z" />
+    <path
+        android:fillColor="#E60012"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M331.3,325.5 C336.9,328.2,341.3,333.4,343.9,339.8 L343.9,325.9
+C343.9,315.4,338.7,305.9,330.8,302 L312.2,292.8 L312.2,316.1 L331.3,325.5 Z" />
+    <path
+        android:fillColor="#00A0E9"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M312.4,434.2 L326,434.2 C336.4,434.2,344.8,425.8,344.8,415.4 L344.8,409.7
+C342.6,402.1,337.9,395.8,331.6,392.7 L312.3,383.2 L312.3,434.2 Z" />
+    <path
+        android:fillColor="#13AE67"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M331.7,380 C337.1,382.7,341.4,387.7,343.8,393.9 L343.8,376.2 L343.8,362.6
+C343.8,352.5,338.8,343.4,331.3,339.7 L313.5,330.9 L313.5,371 L331.7,380 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M24.2,428.8 L26.1,9.5 L281,38.5 L279.1,457.8 Z" />
+    <path
+        android:fillColor="#F9E39D"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M242.6,490 L242.7,392.8 C242.7,371.4,250.4,354.6,262.2,350.2 L288.5,340.5
+L288.8,126 C288.8,107.4,274.3,87.9,256.3,82.4 L33.6,15.1 C15.6,9.6,1,20.3,1,38.9
+L0.5,407.5 C0.5,426.1,15,445.6,33,451.1 L198.5,501.2 L246.2,515.6
+C243.9,507.5,242.5,498.8,242.6,490 Z" />
+</vector>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sync_dia_view">
+
+
+    <ProgressBar
+        android:id="@+id/sync_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/sync_select_local"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="33dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="全部上传"
+        android:textColor="#FF009688" />
+
+    <Button
+        android:id="@+id/sync_select_remote"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/sync_select_local"
+        android:layout_marginEnd="114dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="全部下载"
+        android:textColor="#FF009688" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/syncRecyclerView"
+        android:layout_below="@id/sync_select_remote"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/sync_select_clear"
+        android:layout_marginStart="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/sync_select_local"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="清除全选"
+        android:textColor="#FF009688" />
+
+</RelativeLayout>
