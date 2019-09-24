@@ -74,7 +74,7 @@ public class DataHelper extends SQLiteOpenHelper {
     public Cursor getHistory(SQLiteDatabase db){
         if(db==null)
             db=getWritableDatabase();
-        return db.query("history",null,null,null,null,null,null,null);
+        return db.query("history",null,null,null,null,null,null,null);//get all records
     }
 
     public ArrayList<FileInfo_rec> getHistory(){
